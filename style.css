@@ -50,8 +50,6 @@ hr
 
 .texto_descricao
 {
-    display: flex;
-    align-items:flex-start;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: 100;
     color:rgb(96, 98, 100);
