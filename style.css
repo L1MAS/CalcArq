@@ -13,6 +13,11 @@ hr
     width: 100%;
 }
 
+img
+{
+	margin:5px;
+}
+
 .titulo
 {
     font-size: 80px;
@@ -50,8 +55,6 @@ hr
 
 .texto_descricao
 {
-    display: flex;
-    align-items:flex-start;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: 100;
     color:rgb(96, 98, 100);
@@ -60,18 +63,18 @@ hr
 .corpo
 {
     display: flex;
-    justify-content:flex-start;
-    border: 1px solid black;
+    align-items:flex-start;
+    /* border: 1px solid black; */
 }
 
 .botao
 {
     display: flex;
-    justify-content:flex-end;
-    margin: auto;
-    border: 1px solid black;
-    margin-top: 300px;
+    justify-content:flex-start;
+    /* border: 1px solid black; */
+    margin-top: 150px;
     margin-left: 20px;
+    margin-right: 20px;
 }
 
 .imagens
@@ -79,17 +82,7 @@ hr
     display: flex;
     align-items:baseline;
     width: auto;
-    border: 1px solid black;
-}
-
-.imagem1
-{
-	margin-left:180px;
-}
-
-.imagem2
-{
-    margin-left: 30px;
+    /* border: 1px solid black; */
 }
 
 .input_calcular_area
