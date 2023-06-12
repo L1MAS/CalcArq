@@ -1,0 +1,113 @@
+body
+{
+    background-color: white
+}
+
+div
+{
+    /* border: 1px solid black; */
+}
+
+hr
+{
+    width: 100%;
+}
+
+.titulo
+{
+    font-size: 80px;
+    margin: 0;
+    margin-bottom: -42px;
+}
+
+.subtitulo
+{
+    font-size: 15px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    margin-left: 10px;
+    color:rgb(96, 98, 100);
+    font-weight: 100;
+}
+
+.cabecalho
+{
+    display: flex;
+}
+
+.linha_cabecalho
+{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 100;
+    justify-content: center;
+}
+
+.descricao
+{
+    display: flex;
+    border: 1px solid black;
+}
+
+.texto_descricao
+{
+    display: flex;
+    align-items:flex-start;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 100;
+    color:rgb(96, 98, 100);
+}
+
+.corpo
+{
+    display: flex;
+    justify-content:flex-start;
+    border: 1px solid black;
+}
+
+.botao
+{
+    display: flex;
+    justify-content:flex-end;
+    margin: auto;
+    border: 1px solid black;
+    margin-top: 300px;
+    margin-left: 20px;
+}
+
+.imagens
+{
+    display: flex;
+    align-items:baseline;
+    width: auto;
+    border: 1px solid black;
+}
+
+.imagem1
+{
+	margin-left:180px;
+}
+
+.imagem2
+{
+    margin-left: 30px;
+}
+
+.input_calcular_area
+{
+    background-color: rgb(240, 239, 239);
+    border: 0;
+    border-radius: 2px;
+    height: 26px;
+    width: 120px;
+}
+
+.botao_calcular_area
+{
+    background-color: rgb(255, 255, 255);
+    border-color: rgb(126, 123, 123);
+    border-radius: 2px;
+    height: 28px;
+    width: 120px;
+    color: rgb(59, 57, 57);
+    margin-left: 6px;
+}
