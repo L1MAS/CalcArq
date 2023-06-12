@@ -3,11 +3,6 @@ body
     background-color: white
 }
 
-div
-{
-    /* border: 1px solid black; */
-}
-
 hr
 {
     width: 100%;
@@ -17,6 +12,12 @@ img
 {
 	margin:5px;
 }
+
+
+.flex { display: flex ;}
+.flex-row { flex-direction: row ;}
+.bg-white { background-color: white ;}
+.border { border: 1px solid black ;}
 
 .titulo
 {
@@ -34,23 +35,12 @@ img
     font-weight: 100;
 }
 
-.cabecalho
-{
-    display: flex;
-}
-
 .linha_cabecalho
 {
     display: flex;
     flex-direction: column;
     flex-grow: 100;
     justify-content: center;
-}
-
-.descricao
-{
-    display: flex;
-    border: 1px solid black;
 }
 
 .texto_descricao
@@ -60,18 +50,10 @@ img
     color:rgb(96, 98, 100);
 }
 
-.corpo
-{
-    display: flex;
-    align-items:flex-start;
-    /* border: 1px solid black; */
-}
-
 .botao
 {
     display: flex;
     justify-content:flex-start;
-    /* border: 1px solid black; */
     margin-top: 150px;
     margin-left: 20px;
     margin-right: 20px;
@@ -79,10 +61,8 @@ img
 
 .imagens
 {
-    display: flex;
     align-items:baseline;
     width: auto;
-    /* border: 1px solid black; */
 }
 
 .input_calcular_area
@@ -96,7 +76,6 @@ img
 
 .botao_calcular_area
 {
-    background-color: rgb(255, 255, 255);
     border-color: rgb(126, 123, 123);
     border-radius: 2px;
     height: 28px;
