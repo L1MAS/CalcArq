@@ -53,8 +53,9 @@ img
 .botao
 {
     display: flex;
-    justify-content:flex-start;
-    margin-top: 150px;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
     margin-left: 20px;
     margin-right: 20px;
 }
@@ -72,14 +73,24 @@ img
     border-radius: 2px;
     height: 26px;
     width: 120px;
+    margin-top: 5px;
 }
 
 .botao_calcular_area
 {
-    border-color: rgb(126, 123, 123);
+    border-color: rgb(12, 12, 12);
     border-radius: 2px;
     height: 28px;
     width: 120px;
     color: rgb(59, 57, 57);
-    margin-left: 6px;
+    margin-top: 5px;
+}
+
+.resultado
+{
+    font-size: 12px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color:rgb(96, 98, 100);
+    margin-top: 30px;
+    margin-bottom: 1px;
 }
