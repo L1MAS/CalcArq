@@ -36,6 +36,10 @@ function calcularArea()
     pegarElemento("textoResultado").style.display = "inline";
 }
 
-pegarElemento("resultado").style.display = "none";
-pegarElemento("textoResultado").style.display = "none";
+function fazerAoCarregarPagina()
+{
+    pegarElemento("resultado").style.display = "none";
+    pegarElemento("textoResultado").style.display = "none";
+}
+
 
