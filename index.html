@@ -19,22 +19,28 @@
   </div>
   
  <div class="flex">
-  <div>
 
-    <h5 class="texto_descricao">Calcule aqui seu quadro de áreas de forma simples e fácil.</h5>
-    <div class="botao">
-      <input name="i1" class="input_calcular_area"></input>
-      <input name="i2" class="input_calcular_area"></input>
-      <button class="botao_calcular_area bg-white" onclick="calcularArea()">Calcular área</button>
-      <h5 class="resultado">Resultado</h5>
-      <input name="resultado" class="input_calcular_area" ></input>
+    <div id="menuPrincipal">
+      <h5 class="texto_descricao">Calcule aqui seu quadro de áreas de forma simples e fácil.</h5>
+      <button name="menuAreaPermeavel" class="botao_calcular_area bg-white" onclick="irParaAreaPermeavel()">Área permeável</button>        
     </div>
-  </div>
 
-  <div class="imagens flex">
-    <img src="imagem 1.png" alt="Girl in a jacket" width="248" height="345">
-    <img src="imagem 2.png" alt="Girl in a jacket" width="244" height="347">
-  </div>
+    <div id="calcAreaPermeavel" class="display-none">
+      <h5 class="texto_descricao">Calcule aqui seu quadro de áreas de forma simples e fácil.</h5>
+      <div class="botao">
+        <input name="i1" class="input_calcular_area" placeholder="Área permeável"></input>
+        <input name="i2" class="input_calcular_area" placeholder="Área do terreno"></input>
+        <button name="calcularArea2" class="botao_calcular_area bg-white" onclick="calcularArea()">Calcular área</button>
+        <button name="voltarMenuPrincipal" class="botao_calcular_area bg-white" onclick="irParaMenuPrincipal()">Voltar</button>
+        <h5 name="textoResultado" class="resultado">Resultado</h5>
+        <input name="resultado" class="input_calcular_area" ></input>
+      </div>
+    </div>
+
+    <div class="imagens flex">
+      <img src="imagem 1.png" alt="Girl in a jacket" width="248" height="345">
+      <img src="imagem 2.png" alt="Girl in a jacket" width="244" height="347">
+    </div>
  </div>
   
 </body>
