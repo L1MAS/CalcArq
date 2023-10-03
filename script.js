@@ -29,9 +29,16 @@ function irParaMenuPrincipal()
     pegarElemento("inputAreaPermeavel").value = '';
     pegarElemento("inputAreaTerreno1").value = '';
     pegarElemento("resultado").value = '';
+    
     pegarElemento("inputTaxaOcupacao").value = '';
     pegarElemento("inputAreaTerreno2").value = '';
     pegarElemento("resultadoTaxaOcupacao").value = '';
+
+    pegarElemento("resultado").style.display = "none";
+    pegarElemento("textoResultado").style.display = "none";
+
+    pegarElemento("resultadoTaxaOcupacao").style.display = "none";
+    pegarElemento("textoResultadoTaxaOcupacao").style.display = "none";
 
 }
 
