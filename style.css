@@ -88,6 +88,15 @@ img
     margin-top: 5px;
 }
 
+.botao_taxas
+{
+    border-color: rgb(12, 12, 12);
+    border-radius: 2px;
+    height: 36px;
+    width: 120px;
+    color: rgb(59, 57, 57);
+    margin-top: 5px;
+}
 .resultado
 {
     font-size: 12px;

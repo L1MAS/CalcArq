@@ -22,12 +22,11 @@
 
     <div id="menuPrincipal">
       <h5 class="texto_descricao">Calcule aqui seu quadro de áreas de forma simples e fácil.</h5>
-      <button name="menuAreaPermeavel" class="botao_calcular_area bg-white" onclick="irParaAreaPermeavel()">Taxa de Permeabilidade</button>
-      <button name="menuTaxaOcupacao" class="botao_calcular_area bg-white" onclick="irParaTaxaOcupacao()">Taxa de Ocupação</button>       
+      <button name="menuAreaPermeavel" class="botao_taxas bg-white" onclick="irParaAreaPermeavel()">Taxa de Permeabilidade</button>
+      <button name="menuTaxaOcupacao" class="botao_taxas bg-white" onclick="irParaTaxaOcupacao()">Taxa de Ocupação</button>       
     </div>
 
     <div id="calcAreaPermeavel" class="display-none">
-      <h5 class="texto_descricao">Calcule aqui seu quadro de áreas de forma simples e fácil.</h5>
       <div class="botao">
         <input name="inputAreaPermeavel" class="input_calcular_area" placeholder="Área permeável"></input>
         <input name="inputAreaTerreno1" class="input_calcular_area" placeholder="Área do terreno"></input>
@@ -39,9 +38,8 @@
     </div>
 
     <div id="calcTaxaOcupacao" class="display-none">
-      <h5 class="texto_descricao">Calcule aqui seu quadro de áreas de forma simples e fácil.</h5>
       <div class="botao">
-        <input name="inputTaxaOcupacao" class="input_calcular_area" placeholder="Área construída do pavimento"></input>
+        <input name="inputTaxaOcupacao" class="input_calcular_area" placeholder="Área construída"></input>
         <input name="inputAreaTerreno2" class="input_calcular_area" placeholder="Área do terreno"></input>
         <button name="calcularArea2" class="botao_calcular_area bg-white" onclick="calcularTaxaOcupacao()">Calcular taxa</button>
         <button name="voltarMenuPrincipal" class="botao_calcular_area bg-white" onclick="irParaMenuPrincipal()">Voltar</button>
