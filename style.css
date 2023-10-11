@@ -31,7 +31,7 @@ img
 {
     font-size: 15px;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
-    margin-left: 10px;
+    margin-left: 8px;
     color:rgb(96, 98, 100);
     font-weight: 100;
 }
@@ -49,6 +49,7 @@ img
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: 100;
     color:rgb(96, 98, 100);
+    margin-top: 50px;
 }
 
 .botao
@@ -65,8 +66,17 @@ img
 {
     align-items:baseline;
     width: auto;
+    margin-left: 100px;
+    margin-top: 20px;
 }
 
+.botoes_indices_urbanisticos
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
 .input_calcular_area
 {
     background-color: rgb(240, 239, 239);
@@ -96,6 +106,9 @@ img
     width: 120px;
     color: rgb(59, 57, 57);
     margin-top: 5px;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
 }
 .resultado
 {

@@ -11,7 +11,7 @@
   <div class="flex">
     <div>
       <h1 class="titulo">CalcArq</h1>
-      <h5 class="subtitulo">Cálculo de Projetos Arquitetônicos</h5>
+      <h5 class="subtitulo">Cálculo dos Índices Urbanísticos</h5>
     </div>
     <div class="linha_cabecalho">
       <hr>
@@ -21,9 +21,12 @@
  <div class="flex">
 
     <div id="menuPrincipal">
-      <h5 class="texto_descricao">Calcule aqui seu quadro de áreas de forma simples e fácil.</h5>
+      <h5 class="texto_descricao">Calcule aqui o seu quadro de áreas de<br>forma simples e fácil.</h5>
+      <div id="botoes_indices_urbanisticos" class="botoes_indices_urbanisticos">
       <button name="menuAreaPermeavel" class="botao_taxas bg-white" onclick="irParaAreaPermeavel()">Taxa de Permeabilidade</button>
-      <button name="menuTaxaOcupacao" class="botao_taxas bg-white" onclick="irParaTaxaOcupacao()">Taxa de Ocupação</button>       
+      <button name="menuTaxaOcupacao" class="botao_taxas bg-white" onclick="irParaTaxaOcupacao()">Taxa de Ocupação</button> 
+      <button name="menuAComputavel" class="botao_taxas bg-white" onclick="irParaAComputavel()">Área Computável</button>      
+      </div>
     </div>
 
     <div id="calcAreaPermeavel" class="display-none">
@@ -45,6 +48,17 @@
         <button name="voltarMenuPrincipal" class="botao_calcular_area bg-white" onclick="irParaMenuPrincipal()">Voltar</button>
         <h5 name="textoResultadoTaxaOcupacao" class="resultado">Resultado</h5>
         <input name="resultadoTaxaOcupacao" class="input_calcular_area" ></input>
+      </div>
+    </div>
+
+    <div id="calcAComputavel" class="display-none">
+      <div class="botao">
+        <input name="inputAComputavel" class="input_calcular_area" placeholder="Área computável"></input>
+        <input name="inputAreaTerreno3" class="input_calcular_area" placeholder="Área do terreno"></input>
+        <button name="calcularArea2" class="botao_calcular_area bg-white" onclick="calcularAComputavel()">Calcular área</button>
+        <button name="voltarMenuPrincipal" class="botao_calcular_area bg-white" onclick="irParaMenuPrincipal()">Voltar</button>
+        <h5 name="textoResultadoAComputavel" class="resultado">Resultado</h5>
+        <input name="resultadoAComputavel" class="input_calcular_area" ></input>
       </div>
     </div>
 

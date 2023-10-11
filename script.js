@@ -20,25 +20,36 @@ function irParaTaxaOcupacao()
     pegarElementoPeloID("calcTaxaOcupacao").style.display = "inline";
 }
 
+function irParaAComputavel()
+{    
+    pegarElementoPeloID("menuPrincipal").style.display = "none";
+    pegarElementoPeloID("calcAComputavel").style.display = "inline";
+}
+
 function irParaMenuPrincipal()
 {
     pegarElementoPeloID("menuPrincipal").style.display = "inline";
     pegarElementoPeloID("calcAreaPermeavel").style.display = "none";
     pegarElementoPeloID("calcTaxaOcupacao").style.display = "none";
+    pegarElementoPeloID("calcAComputavel").style.display = "none";
 
     pegarElemento("inputAreaPermeavel").value = '';
     pegarElemento("inputAreaTerreno1").value = '';
     pegarElemento("resultado").value = '';
-    
-    pegarElemento("inputTaxaOcupacao").value = '';
-    pegarElemento("inputAreaTerreno2").value = '';
-    pegarElemento("resultadoTaxaOcupacao").value = '';
-
     pegarElemento("resultado").style.display = "none";
     pegarElemento("textoResultado").style.display = "none";
 
+    pegarElemento("inputTaxaOcupacao").value = '';
+    pegarElemento("inputAreaTerreno2").value = '';
+    pegarElemento("resultadoTaxaOcupacao").value = '';
     pegarElemento("resultadoTaxaOcupacao").style.display = "none";
     pegarElemento("textoResultadoTaxaOcupacao").style.display = "none";
+
+    pegarElemento("inputAComputavel").value = '';
+    pegarElemento("inputAreaTerreno3").value = '';
+    pegarElemento("resultadoAComputavel").value = '';
+    pegarElemento("resultadoAComputavel").style.display = "none";
+    pegarElemento("textoResultadoAComputavel").style.display = "none";
 
 }
 
@@ -52,7 +63,7 @@ function calcularArea()
     const taxaPermeabilidade = areaPermeavel * 100 / areaTerreno
 
     const inputResultado = pegarElemento("resultado")
-    inputResultado.value=taxaPermeabilidade
+    inputResultado.value=taxaPermeabilidade.toFixed(2)
 
     pegarElemento("resultado").style.display = "inline";
     pegarElemento("textoResultado").style.display = "inline";
@@ -68,10 +79,26 @@ function calcularTaxaOcupacao()
     const taxaOcupacao = areaConstruidaPavimento * 100 / areaTerreno
 
     const inputResultado = pegarElemento("resultadoTaxaOcupacao")
-    inputResultado.value=taxaOcupacao
+    inputResultado.value=taxaOcupacao.toFixed(2)
 
     pegarElemento("resultadoTaxaOcupacao").style.display = "inline";
     pegarElemento("textoResultadoTaxaOcupacao").style.display = "inline";
+}
+
+function calcularAComputavel()
+{
+    const inputAComputavel = pegarElemento("inputAComputavel")
+    const inputAreaTerreno3 = pegarElemento("inputAreaTerreno3")    
+    const areaTerreno = inputAreaTerreno3.value
+    const areaComputavel = inputAComputavel.value
+
+    const AComputavel = areaComputavel / areaTerreno
+
+    const inputResultado = pegarElemento("resultadoAComputavel")
+    inputResultado.value=AComputavel.toFixed(2)
+
+    pegarElemento("resultadoAComputavel").style.display = "inline";
+    pegarElemento("textoResultadoAComputavel").style.display = "inline";
 }
 
 function fazerAoCarregarPagina()
@@ -81,6 +108,9 @@ function fazerAoCarregarPagina()
 
     pegarElemento("resultadoTaxaOcupacao").style.display = "none";
     pegarElemento("textoResultadoTaxaOcupacao").style.display = "none";
+
+    pegarElemento("resultadoAComputavel").style.display = "none";
+    pegarElemento("textoResultadoAComputavel").style.display = "none";
 }
 
 
