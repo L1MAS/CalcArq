@@ -20,10 +20,10 @@ function irParaTaxaOcupacao()
     pegarElementoPeloID("calcTaxaOcupacao").style.display = "inline";
 }
 
-function irParaAComputavel()
+function irParaCAproveitamento()
 {    
     pegarElementoPeloID("menuPrincipal").style.display = "none";
-    pegarElementoPeloID("calcAComputavel").style.display = "inline";
+    pegarElementoPeloID("calcCAproveitamento").style.display = "inline";
 }
 
 function irParaMenuPrincipal()
@@ -45,11 +45,11 @@ function irParaMenuPrincipal()
     pegarElemento("resultadoTaxaOcupacao").style.display = "none";
     pegarElemento("textoResultadoTaxaOcupacao").style.display = "none";
 
-    pegarElemento("inputAComputavel").value = '';
+    pegarElemento("inputCAproveitamento").value = '';
     pegarElemento("inputAreaTerreno3").value = '';
-    pegarElemento("resultadoAComputavel").value = '';
-    pegarElemento("resultadoAComputavel").style.display = "none";
-    pegarElemento("textoResultadoAComputavel").style.display = "none";
+    pegarElemento("resultadoCAproveitamento").value = '';
+    pegarElemento("resultadoCAproveitamento").style.display = "none";
+    pegarElemento("textoResultadoCAproveitamento").style.display = "none";
 
 }
 
@@ -85,20 +85,20 @@ function calcularTaxaOcupacao()
     pegarElemento("textoResultadoTaxaOcupacao").style.display = "inline";
 }
 
-function calcularAComputavel()
+function calcularCAproveitamento()
 {
-    const inputAComputavel = pegarElemento("inputAComputavel")
+    const inputCAproveitamento = pegarElemento("inputAComputavel")
     const inputAreaTerreno3 = pegarElemento("inputAreaTerreno3")    
     const areaTerreno = inputAreaTerreno3.value
-    const areaComputavel = inputAComputavel.value
+    const areaComputavel = inputCAproveitamento.value
 
-    const AComputavel = areaComputavel / areaTerreno
+    const CAproveitamento = areaComputavel / areaTerreno
 
-    const inputResultado = pegarElemento("resultadoAComputavel")
-    inputResultado.value=AComputavel.toFixed(2)
+    const inputResultado = pegarElemento("resultadoCAproveitamento")
+    inputResultado.value=CAproveitamento.toFixed(2)
 
-    pegarElemento("resultadoAComputavel").style.display = "inline";
-    pegarElemento("textoResultadoAComputavel").style.display = "inline";
+    pegarElemento("resultadoCAproveitamento").style.display = "inline";
+    pegarElemento("textoResultadoCAproveitamento").style.display = "inline";
 }
 
 function fazerAoCarregarPagina()
@@ -109,8 +109,8 @@ function fazerAoCarregarPagina()
     pegarElemento("resultadoTaxaOcupacao").style.display = "none";
     pegarElemento("textoResultadoTaxaOcupacao").style.display = "none";
 
-    pegarElemento("resultadoAComputavel").style.display = "none";
-    pegarElemento("textoResultadoAComputavel").style.display = "none";
+    pegarElemento("resultadoCAproveitamento").style.display = "none";
+    pegarElemento("textoResultadoCAproveitamento").style.display = "none";
 }
 
 
