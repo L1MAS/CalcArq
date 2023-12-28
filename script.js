@@ -8,27 +8,45 @@ function pegarElementoPeloID(id)
     return document.getElementById(id)
 }
 
-function irParaAreaPermeavel()
+function irParaIUrbanisticos()
 {    
     pegarElementoPeloID("menuPrincipal").style.display = "none";
+    pegarElementoPeloID("menuSecundario").style.display = "inline";
+}
+
+function irParaRampa()
+{    
+    pegarElementoPeloID("menuPrincipal").style.display = "none";
+    pegarElementoPeloID("calcInclinacao").style.display = "inline";
+}
+
+function irParaAreaPermeavel()
+{    
+    pegarElementoPeloID("menuSecundario").style.display = "none";
     pegarElementoPeloID("calcAreaPermeavel").style.display = "inline";
 }
 
 function irParaTaxaOcupacao()
 {    
-    pegarElementoPeloID("menuPrincipal").style.display = "none";
+    pegarElementoPeloID("menuSecundario").style.display = "none";
     pegarElementoPeloID("calcTaxaOcupacao").style.display = "inline";
 }
 
 function irParaCAproveitamento()
 {    
-    pegarElementoPeloID("menuPrincipal").style.display = "none";
+    pegarElementoPeloID("menuSecundario").style.display = "none";
     pegarElementoPeloID("calcCAproveitamento").style.display = "inline";
 }
 
 function irParaMenuPrincipal()
 {
     pegarElementoPeloID("menuPrincipal").style.display = "inline";
+    pegarElementoPeloID("menuSecundario").style.display = "none";
+}
+
+function irParaMenuSecundario()
+{
+    pegarElementoPeloID("menuSecundario").style.display = "inline";
     pegarElementoPeloID("calcAreaPermeavel").style.display = "none";
     pegarElementoPeloID("calcTaxaOcupacao").style.display = "none";
     pegarElementoPeloID("calcAComputavel").style.display = "none";
@@ -101,6 +119,22 @@ function calcularCAproveitamento()
     pegarElemento("textoResultadoCAproveitamento").style.display = "inline";
 }
 
+function calcularInclinacao()
+{
+    const inputAltura = pegarElemento("inputAltura")
+    const inputComprimento = pegarElemento("inputComprimento")    
+    const comrprimento = inputComprimento.value
+    const altura = inputAltura.value
+
+    const Inclinacao = altura * 100 / comrprimento
+
+    const inputResultado = pegarElemento("resultadoInclinacao")
+    inputResultado.value=Inclinacao.toFixed(2)
+
+    pegarElemento("resultadoInclinacao").style.display = "inline";
+    pegarElemento("textoResultadoInclinacao").style.display = "inline";
+}
+
 function fazerAoCarregarPagina()
 {
     pegarElemento("resultado").style.display = "none";
@@ -111,6 +145,9 @@ function fazerAoCarregarPagina()
 
     pegarElemento("resultadoCAproveitamento").style.display = "none";
     pegarElemento("textoResultadoCAproveitamento").style.display = "none";
+
+    pegarElemento("resultadoInclinacao").style.display = "none";
+    pegarElemento("textoResultadoInclinacao").style.display = "none";
 }
 
 

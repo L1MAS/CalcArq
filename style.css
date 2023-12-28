@@ -29,9 +29,10 @@ img
 
 .subtitulo
 {
-    font-size: 15px;
+    font-size: 12px;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     margin-left: 8px;
+    margin-top: 8px;
     color:rgb(96, 98, 100);
     font-weight: 100;
 }
@@ -71,7 +72,7 @@ img
     margin-top: 20px;
 }
 
-.botoes_indices_urbanisticos
+.botoes_geral
 {
     display: flex;
     flex-direction: column;
@@ -92,18 +93,27 @@ img
 
 .botao_calcular_area
 {
-    border-color: rgb(12, 12, 12);
-    border-radius: 2px;
+    border-color: rgb(0, 0, 0);
+    border-radius: 4px;
     height: 28px;
     width: 120px;
     color: rgb(59, 57, 57);
     margin-top: 5px;
 }
 
+.botao_voltar
+{
+    margin-top: 5px;
+    border: 0px;
+    border-radius: 3px;
+    background: rgb(56, 56, 56);
+    color: rgb(255, 255, 255);
+}
+
 .botao_taxas
 {
     border-color: rgb(12, 12, 12);
-    border-radius: 2px;
+    border-radius: 4px;
     height: 36px;
     width: 120px;
     color: rgb(59, 57, 57);
@@ -111,7 +121,9 @@ img
     flex-direction: column;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
+
 .resultado
 {
     font-size: 12px;

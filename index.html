@@ -11,7 +11,8 @@
   <div class="flex">
     <div>
       <h1 class="titulo">CalcArq</h1>
-      <h5 class="subtitulo">Cálculo dos Índices Urbanísticos</h5>
+      <br>
+      <h5 class="subtitulo">Índices Urbanísticos e Inclinação de Rampa</h5>
     </div>
     <div class="linha_cabecalho">
       <hr>
@@ -21,12 +22,18 @@
  <div class="flex">
 
     <div id="menuPrincipal">
-      <h5 class="texto_descricao">Calcule aqui o seu quadro de áreas de<br>forma simples e fácil.</h5>
-      <div id="botoes_indices_urbanisticos" class="botoes_indices_urbanisticos">
+      <h5 class="texto_descricao">Calcule aqui os índices urbanísticos<br>e inclinação de rampa de forma simples e fácil.</h5>
+      <div id="botoes_principais" class="botoes_geral">
+      <button name="menuIUrbanisticos"class="botao_taxas bg-white" onclick="irParaIUrbanisticos()">Índices Urbanísticos</button>
+      <button name="menuRampa"class="botao_taxas bg-white" onclick="irParaRampa()">Rampa</button>      
+      </div>
+    </div>
+
+    <div id="menuSecundario" class="botoes_geral">
       <button name="menuAreaPermeavel" class="botao_taxas bg-white" onclick="irParaAreaPermeavel()">Taxa de Permeabilidade</button>
       <button name="menuTaxaOcupacao" class="botao_taxas bg-white" onclick="irParaTaxaOcupacao()">Taxa de Ocupação</button> 
-      <button name="menuAComputavel" class="botao_taxas bg-white" onclick="irParaCAproveitamento()">Coeficiente de Aproveitamento</button>      
-      </div>
+      <button name="menuAComputavel" class="botao_taxas bg-white" onclick="irParaCAproveitamento()">Coeficiente de Aproveitamento</button>
+      <button name="voltarMenuPrincipal" class="botao_voltar" onclick="irParaMenuPrincipal()">Voltar</button>
     </div>
 
     <div id="calcAreaPermeavel" class="display-none">
@@ -34,7 +41,7 @@
         <input name="inputAreaPermeavel" class="input_calcular_area" placeholder="Área permeável"></input>
         <input name="inputAreaTerreno1" class="input_calcular_area" placeholder="Área do terreno"></input>
         <button name="calcularArea2" class="botao_calcular_area bg-white" onclick="calcularArea()">Calcular área</button>
-        <button name="voltarMenuPrincipal" class="botao_calcular_area bg-white" onclick="irParaMenuPrincipal()">Voltar</button>
+        <button name="voltarMenuSecundario" class="botao_voltar" onclick="irParaMenuSecundario()">Voltar</button>
         <h5 name="textoResultado" class="resultado">Resultado</h5>
         <input name="resultado" class="input_calcular_area" ></input>
       </div>
@@ -45,7 +52,7 @@
         <input name="inputTaxaOcupacao" class="input_calcular_area" placeholder="Área construída"></input>
         <input name="inputAreaTerreno2" class="input_calcular_area" placeholder="Área do terreno"></input>
         <button name="calcularArea2" class="botao_calcular_area bg-white" onclick="calcularTaxaOcupacao()">Calcular taxa</button>
-        <button name="voltarMenuPrincipal" class="botao_calcular_area bg-white" onclick="irParaMenuPrincipal()">Voltar</button>
+        <button name="voltarMenuSecundario" class="botao_voltar" onclick="irParaMenuSecundario()">Voltar</button>
         <h5 name="textoResultadoTaxaOcupacao" class="resultado">Resultado</h5>
         <input name="resultadoTaxaOcupacao" class="input_calcular_area" ></input>
       </div>
@@ -56,9 +63,20 @@
         <input name="inputAComputavel" class="input_calcular_area" placeholder="Área computável"></input>
         <input name="inputAreaTerreno3" class="input_calcular_area" placeholder="Área do terreno"></input>
         <button name="calcularArea2" class="botao_calcular_area bg-white" onclick="calcularCAproveitamento()">Calcular área</button>
-        <button name="voltarMenuPrincipal" class="botao_calcular_area bg-white" onclick="irParaMenuPrincipal()">Voltar</button>
+        <button name="voltarMenuSecundario" class="botao_voltar" onclick="irParaMenuSecundario()">Voltar</button>
         <h5 name="textoResultadoCAproveitamento" class="resultado">Resultado</h5>
         <input name="resultadoCAproveitamento" class="input_calcular_area" ></input>
+      </div>
+    </div>
+
+    <div id="calcInclinacao" class="display-none">
+      <div class="botao">
+        <input name="inputAltura" class="input_calcular_area" placeholder="Altura (m)"></input>
+        <input name="inputComprimento" class="input_calcular_area" placeholder="Comprimento (m)"></input>
+        <button name="calcularInclinacao" class="botao_calcular_area bg-white" onclick="calcularInclinacao()">Calcular inclinação</button>
+        <button name="voltarMenuPrincipal" class="botao_voltar" onclick="irParaMenuPrincipal()">Voltar</button>
+        <h5 name="textoResultadoInclinacao" class="resultado">Resultado</h5>
+        <input name="resultadoInclinacao" class="input_calcular_area" ></input>
       </div>
     </div>
 
